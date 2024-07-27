@@ -11,8 +11,7 @@ class Shape:
 
 
 class Circle(Shape):
-    def __init__(self, radius) -> None:
-        super().__init__()
+    def __init__(self, radius):
         self.radius = radius
 
     def area(self):
