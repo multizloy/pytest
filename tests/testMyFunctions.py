@@ -10,3 +10,13 @@ def testAdd():
 def testDivide():
     result = myFunctions.divide(10, 5)
     assert result == 2
+
+
+def testDivideByZero():
+    with pytest.raises(ValueError):
+        myFunctions.divide(10, 0)
+
+
+def testAddStrings():
+    result = myFunctions.add("i like ", "burgers")
+    assert result == "i like burgers"
