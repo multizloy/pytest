@@ -4,7 +4,7 @@ import source.shapes as shapes
 
 @pytest.fixture
 def myRectangle():
-    return shapes.Rectangle(10, 20)
+    return shapes.Rectangle(10, 20) 
 
 
 @pytest.fixture
